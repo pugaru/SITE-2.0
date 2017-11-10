@@ -1,10 +1,22 @@
 .login{
 	text-align: center;
-	
+	font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
 		
 }
 
+nome_mural{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+	text-decoration: underline;
+}
 
+txt_mural{
+	text-align: center;
+	font-family: 'verdana';
+	font-size: 16px;
+	text-decoration: none;
+}
     
 
 body{
@@ -178,7 +190,9 @@ HP_comentario2{
 }
 
 .link {color: #000000;
-	text-decoration:none;
+	text-decoration:underline;
+	font-family: "Verdana";
+	font-size: 24px;
 }
 
 lista_cursos{

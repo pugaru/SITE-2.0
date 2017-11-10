@@ -2,6 +2,7 @@
 {% block title %}Contato.{% endblock %}
 
 {% block main %}
+        <center>
         <h1>Contato</h1>
         <form method="POST" action="">
                 {% csrf_token %}
@@ -10,5 +11,5 @@
                 mensagem: <textarea name="mensagem"></textarea><br>
                 <button type="submit">Enviar</button>
         </form>
-
+        </center>
 {% endblock %}        

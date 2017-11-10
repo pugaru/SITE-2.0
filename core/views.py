@@ -6,10 +6,9 @@ from core.forms import ContactForm
 # Create your views here.
 def index(request):
     contexto={
-        "usuario":"",
+        "usuario":"Ser Humano",
         #aluno,professor,sbruble
         "perfil":"aluno",
-        "cursos":Curso.objects.all()
     }
     return render(request,"index.html",contexto)
 
@@ -20,7 +19,10 @@ def detalhe_curso(request):
     return render(request,"detalhe_curso.html")
 
 def lista_cursos(request):
-    return render(request,"lista_cursos.html")
+    contexto={
+        "cursos":Curso.objects.all()
+    }
+    return render(request,"lista_cursos.html",contexto)
 
 def noticias(request):
     return render(request,"noticias.html")
@@ -38,3 +40,4 @@ def contato(request):
 
 def login(request):
     return render(request,"login.html")
+

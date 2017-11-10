@@ -11,25 +11,41 @@
     {% block main %}
 	
 	<body>
+		</ul>
+ 
 		<texto_homepage>
 			{% if usuario %}
 				<p><h2>Olá {{ usuario }},tudo bem? Gostaria de um café?</h2></p>
-			{% endif %}	
-			<ul>
-				{% for curso in cursos %}
-					<li class="{{ curso.classe }}">{{ curso.nome }} - {{ curso.tipo }}</li>
-				{% endfor %}
-			</ul>
+			{% endif %}
+		</texto_homepage>	
+
+		<txt_mural>
 			{% if usuario %}
 				{% if perfil == 'aluno' %}
-					<p>Conteúdo para Alunos</p>
+				<nome_mural><h2><p>Conteúdo para Alunos</p></h2></nome_mural>
+
+					<texto_homepage>
+						<p>bláblábláblábláblábláblá</p>
+					</texto_homepage>
+
 				{% elif perfil == 'professor' %}
-					<p>Conteúdo para Professores</p>
+				<nome_mural><h2><p>Conteúdo para Professores</p></h2></nome_mural>
+
+					<texto_homepage>
+						<p>bláblábláblábláblábláblá</p>
+					</texto_homepage>
+
 				{% else %}
-					<p>Conteúdo para Coordenadores</p>
+				<nome_mural><h2><p>Conteúdo para Coordenadores</p></h2></nome_mural>
+					
+					<texto_homepage>
+						<p>bláblábláblábláblábláblá</p>
+					</texto_homepage>					
+					
 				{% endif %}	
 			{% endif %}		
-		</texto_homepage>	
+		</txt_mural>
+
 			<center><h1><tipo_curso>Sobre a Impacta</tipo_curso></h1></center>
 		<img align="right" src="/static/campus-barra-funda.jpg" height="300" width="400"/>
 	</div>
