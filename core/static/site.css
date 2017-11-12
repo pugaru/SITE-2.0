@@ -1,10 +1,22 @@
 .login{
 	text-align: center;
-	
+	font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
 		
 }
 
+nome_mural{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+	text-decoration: underline;
+}
 
+txt_mural{
+	text-align: center;
+	font-family: 'verdana';
+	font-size: 16px;
+	text-decoration: none;
+}
     
 
 body{
@@ -45,7 +57,7 @@ a.classe1:hover,a.classe1:active{
   	text-align: center;
 }
 .header{
-	background-color:#333;
+	background-color: #273e6b;
 	border-bottom: 2px solid black;
 	height:250px;
 	width:100%;
@@ -76,7 +88,7 @@ ul.topnav {
     margin-top:0px;
     padding-top: 0px;
     overflow: hidden;
-    background-color: #1f3867;
+    background-color: #333;
     position: fixed;
     top:0;
     width: 100%;
@@ -178,11 +190,13 @@ HP_comentario2{
 }
 
 .link {color: #000000;
-	text-decoration:none;
+	text-decoration:underline;
+	font-family: "Verdana";
+	font-size: 24px;
 }
 
 lista_cursos{
-font-family:"Arial";
+font-family:"Verdana";
 font-size:20px;	
 }
 
@@ -199,9 +213,6 @@ descricao_curso{
 	
 }
 
-tipo_curso{
-	font-size: 30px;
-}
 noticia{
 	font-size: 16px;
 	font-family: "Verdana";
