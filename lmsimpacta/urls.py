@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'lista_curso',lista_cursos),
     url(r'contato',contato),
     url(r'login',login),
+    url(r'curso',curso),
 ]
