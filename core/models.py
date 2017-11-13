@@ -9,6 +9,6 @@ class Curso(models.Model):
         ativo = models.BooleanField(default=True)
         descricao = models.TextField(blank=True)
         Matriz_Curricular = models.TextField(blank=True)
-        def __str__(self):
+        def __unicode__(self):
                 return self.nome    
 # Create your models here.
