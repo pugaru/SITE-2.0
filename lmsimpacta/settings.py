@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-mysqlconnstr = os.environ['MYSQLCONNSTR_localdb']
-mysqlconnlst = mysqlconnstr.split(';')
-mysqlconndict = dict(s.split('=',1) for s in mysqlconnlst)
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -80,15 +77,14 @@ WSGI_APPLICATION = 'lmsimpacta.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': mysqlconndict['Database'],
-        'USER': mysqlconndict['User Id'],
-        'PASSWORD': mysqlconndict['Password'],
-        'HOST': mysqlconndict['Data Source'].split(':')[0],
-        'PORT': mysqlconndict['Data Source'].split(':')[1],
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'localdb',
+        'USER': 'azure',
+        'PASSWORD': '6#vWHD_$',
+        'HOST': '127.0.0.1',
+        'PORT': '53738',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
