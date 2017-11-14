@@ -5,7 +5,7 @@
 from django.core.executorSQL import ExecutorSQL
 from django.core.models import Curso
 
-class CursoRN():
+class CursoDAO():
 
     def selectAll(self):
 
