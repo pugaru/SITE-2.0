@@ -2,6 +2,7 @@ from django.shortcuts import render
 #from .forms import ContatoForm
 from core.models import Curso
 from core.forms import ContatoForm,CursoForm
+from core.cursoRN import CursoRN
 
 # Create your views here.
 def index(request):
@@ -17,13 +18,14 @@ def disciplina(request):
 
 def detalhe_curso(request):
     contexto={
-        "cursos":Curso.objects.all()
+        "cursos": CursoRN().all()
     }
     return render(request,"detalhe_curso.html",contexto)
 
 def lista_cursos(request):
     contexto={
-        "cursos":Curso.objects.all()
+        # "cursos":Curso.objects.all()
+        "cursos": CursoRN().all()
     }
     return render(request,"lista_cursos.html",contexto)
 
