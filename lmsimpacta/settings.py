@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'lmsimpacta.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
@@ -83,14 +83,6 @@ DATABASES = {
         'PASSWORD': '6#vWHD_$',
         'HOST': '127.0.0.1',
         'PORT': '53738',
-    }
-}
-"""
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
